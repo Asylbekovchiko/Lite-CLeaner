@@ -21,7 +21,6 @@ import kg.asylbekov.litecleaner.utils.extensions.getAcceptPV
 import kg.asylbekov.litecleaner.utils.extensions.saveAcceptPV
 import kg.asylbekov.litecleaner.utils.extensions.saveFirstOpen
 
-
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 
