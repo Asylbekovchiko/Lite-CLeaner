@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey"
+    android:background="@color/blue4"
     tools:context=".ui.phoneboost.PhoneBoostFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,9 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/blue4"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/iv_game"
@@ -48,5 +48,118 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_anim"
+        android:layout_width="@dimen/phone_boost_anim_size"
+        android:layout_height="@dimen/phone_boost_anim_size"
+        android:layout_marginTop="62dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pb_toolbar"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/anim_boost" />
+
+    <TextView
+        android:id="@+id/tv_title_ram"
+        style="@style/TextStyle.Title.Ram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:text="@string/ram"
+        app:layout_constraintEnd_toEndOf="@+id/lottie_anim"
+        app:layout_constraintStart_toStartOf="@+id/lottie_anim"
+        app:layout_constraintTop_toTopOf="@+id/lottie_anim" />
+
+    <TextView
+        android:id="@+id/tv_percent_of_ram"
+        style="@style/TextStyle.Content.Percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_0.5x"
+        android:layout_marginTop="40dp"
+        android:text="63%"
+        app:layout_constraintBottom_toBottomOf="@+id/lottie_anim"
+        app:layout_constraintEnd_toEndOf="@+id/lottie_anim"
+        app:layout_constraintStart_toStartOf="@+id/lottie_anim"
+        app:layout_constraintTop_toTopOf="@+id/lottie_anim" />
+
+
+    <TextView
+        android:id="@+id/tv_desc_usage"
+        style="@style/TextStyle.Content.Percentage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usage"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title_ram"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_ram"
+        app:layout_constraintTop_toBottomOf="@+id/tv_percent_of_ram" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_ram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+    <TextView
+        android:id="@+id/ram_total_size"
+        style="@style/TextStyle.Title.Toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.58 GB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+ />
+
+    <TextView
+        android:id="@+id/ram_available_size"
+        style="@style/TextStyle.Title.Toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:text="2.56 GB / "
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ram_total_size"
+        app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_ram_usage"
+        style="@style/TextStyle.Content.RAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_0.5x"
+        android:text="@string/ram_usage"
+        app:layout_constraintBottom_toTopOf="@id/cl_ram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_optimize"
+        style="@style/ButtonStyle.Red"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginBottom="36dp"
+        android:text="Optimized"
+        app:layout_constraintBottom_toTopOf="@id/tv_ram_usage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_option"
+        style="@style/TextStyle.Content.Recommended"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_2.5x"
+        android:text="It is recommended to optimize the phone"
+        app:layout_constraintBottom_toTopOf="@id/btn_optimize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

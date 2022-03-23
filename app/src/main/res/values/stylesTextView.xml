@@ -26,9 +26,39 @@
         <item name="fontFamily">@font/roboto_medium</item>
     </style>
 
+    <style name="TextStyle.Content.RAM" parent="Theme.AppCompat">
+        <item name="android:textSize">@dimen/scale_1.75x</item>
+        <item name="android:textColor">@color/grey2</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TextStyle.Content.Recommended" parent="Theme.AppCompat">
+        <item name="android:textSize">@dimen/scale_1.75x</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="TextStyle.Content.Percentage" parent="Theme.AppCompat">
+        <item name="android:textSize">@dimen/scale_3.75x</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+  <style name="TextStyle.Title.Ram" parent="Theme.AppCompat">
+        <item name="android:textSize">@dimen/scale_2.25x</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
     <style name="TextStyle.Content.Loading" parent="Theme.AppCompat">
         <item name="android:textSize">@dimen/scale_1.75x</item>
         <item name="android:textColor">@color/grey2</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+   <style name="TextStyle.Content.Percentage2" parent="Theme.AppCompat">
+        <item name="android:textSize">@dimen/scale_1.75x</item>
+        <item name="android:textColor">@color/white</item>
         <item name="fontFamily">@font/roboto</item>
     </style>
 

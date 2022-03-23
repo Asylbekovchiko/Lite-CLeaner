@@ -3,12 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2405" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/back_drawable.xml" value="0.109" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/boost_drawable.xml" value="0.2405" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/button_blue.xml" value="0.1785" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/clean_drawable.xml" value="0.2405" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/cooler_drawable.xml" value="0.2405" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/cpu_drawable.xml" value="0.244" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/ic_arrow_left.xml" value="0.2405" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/ic_boost.xml" value="0.2405" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/ic_boost_2.xml" value="0.205" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/ic_clean.xml" value="0.2405" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/ic_cool.xml" value="0.2405" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/ic_game.xml" value="0.2405" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/ic_im_icon.xml" value="0.237" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/ic_optimize.xml" value="0.2405" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/ic_optimize_2__1_.xml" value="0.2405" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/ic_optimize_2__3_.xml" value="0.2085" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/ic_premium.xml" value="0.2405" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/ic_spamremoval.xml" value="0.2405" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/lite_cleaner_drawable.xml" value="0.2405" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/selector_bottom_nav.xml" value="0.109" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/drawable/spamremoval_drawable.xml" value="0.2405" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/font/bold.xml" value="0.2640625" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/font/roboto.xml" value="0.2640625" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/font/roboto_condensed.xml" value="0.2640625" />
@@ -16,9 +32,11 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/layout/activity_main.xml" value="0.2128623188405797" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/layout/activity_splash.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/layout/activity_web_view.xml" value="0.16" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/layout/fragment_cleaner.xml" value="0.21965579710144928" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/layout/fragment_cooler.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/layout/fragment_optimize.xml" value="0.1" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/layout/fragment_phone_boost.xml" value="0.2" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/layout/fragment_phone_boost.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/layout/fragment_spam_removal.xml" value="0.21965579710144928" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/layout/fragment_splash.xml" value="0.16" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/layout/layout_toolbar_center_align.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/LiteCleaner/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23385416666666667" />

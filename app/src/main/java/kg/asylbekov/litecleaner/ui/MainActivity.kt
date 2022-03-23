@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initBottomNav() {
+        bottomNavigationView.setItemIconTintList(null);
         navController = findNavController(R.id.fragmentContainerView)
         bottomNavigationView.setupWithNavController(navController)
         val appBarConfiguration = AppBarConfiguration(
@@ -36,6 +37,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.boostFragment,
                 R.id.optimizeFragment,
                 R.id.coolerFragment,
+
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

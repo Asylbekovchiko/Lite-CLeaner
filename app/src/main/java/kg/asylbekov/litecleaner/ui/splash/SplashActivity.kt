@@ -1,16 +1,19 @@
 package kg.asylbekov.litecleaner.ui.splash
 
 import android.annotation.SuppressLint
+import android.app.ActivityManager
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.ads.*
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import kg.asylbekov.litecleaner.R
+import kg.asylbekov.litecleaner.app.AppModule.Companion.context
 import kg.asylbekov.litecleaner.databinding.ActivitySplashBinding
 import kg.asylbekov.litecleaner.ui.MainActivity
 import kg.asylbekov.litecleaner.ui.webview.WebViewActivity
@@ -22,9 +25,10 @@ import kg.asylbekov.litecleaner.utils.extensions.saveFirstOpen
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 
-    private val fromWebView : Boolean
+    private val fromWebView: Boolean
         get() = intent.getBooleanExtra("fromWebView", false)
     var mInterstitialAd: InterstitialAd? = null
+    private var adIsLoaded: Boolean = false
 
     private lateinit var binding: ActivitySplashBinding
     private lateinit var handler: Handler
@@ -50,11 +54,14 @@ class SplashActivity : AppCompatActivity() {
             object : InterstitialAdLoadCallback() {
                 override fun onAdFailedToLoad(adError: LoadAdError) {
                     mInterstitialAd = null
-                    startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+                    adIsLoaded = false
+
+//                    startActivity(Intent(this@SplashActivity, MainActivity::class.java))
                 }
 
                 override fun onAdLoaded(interstitialAd: InterstitialAd) {
                     mInterstitialAd = interstitialAd
+                    adIsLoaded = true
 
                     mInterstitialAd?.fullScreenContentCallback =
                         object : FullScreenContentCallback() {
@@ -83,6 +90,13 @@ class SplashActivity : AppCompatActivity() {
     private fun initUI() {
         binding.apply {
             btnContinue.setOnClickListener {
+                if (mInterstitialAd != null && adIsLoaded) {
+                    mInterstitialAd?.show(this@SplashActivity)
+                } else {
+                    startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+                    Toast.makeText(this@SplashActivity, "AD wasnt loaded", Toast.LENGTH_SHORT)
+                        .show()
+                }
                 saveAcceptPV(this@SplashActivity, true)
             }
 
@@ -102,10 +116,10 @@ class SplashActivity : AppCompatActivity() {
     private fun checkFirstOpen() {
 
         if (!getAcceptPV(this)) {
-            if(fromWebView != null && fromWebView == true){
+            if (fromWebView != null && fromWebView == true) {
                 binding.clPrivacyMain.visibility = View.VISIBLE
                 binding.clIndicator.visibility = View.GONE
-            }else{
+            } else {
                 binding.clIndicator.visibility = View.VISIBLE
                 handler.postDelayed({
                     binding.clPrivacyMain.visibility = View.VISIBLE
@@ -120,13 +134,14 @@ class SplashActivity : AppCompatActivity() {
                 }, 2500)
                 saveFirstOpen(this, false)
             }
-        }else {
+        } else {
             binding.clIndicator.visibility = View.VISIBLE
             handler.postDelayed({
-                if (mInterstitialAd != null) {
+                if (mInterstitialAd != null && adIsLoaded) {
                     mInterstitialAd?.show(this@SplashActivity)
                 } else {
-                    Log.d("TAG", "The interstitial ad wasn't ready yet.")
+                    startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+                    Toast.makeText(this, "AD wasnt loaded", Toast.LENGTH_SHORT).show()
                 }
             }, 7500)
 

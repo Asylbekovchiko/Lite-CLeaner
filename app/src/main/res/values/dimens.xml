@@ -23,10 +23,18 @@
     <dimen name="scale_1.875x">15sp</dimen>
     <dimen name="scale_2x">16sp</dimen>
     <dimen name="scale_2.25x">18sp</dimen>
+    <dimen name="scale_2.50x">20sp</dimen>
+    <dimen name="scale_2.75x">22sp</dimen>
+    <dimen name="scale_3x">24sp</dimen>
+    <dimen name="scale_3.25x">26sp</dimen>
+    <dimen name="scale_3.5x">28sp</dimen>
+    <dimen name="scale_3.75x">30sp</dimen>
 
 
     <!-- icon -->
     <dimen name="margin_top_182dp">182dp</dimen>
     <dimen name="btn_width">232dp</dimen>
+    <dimen name="btn_height">40dp</dimen>
     <dimen name="bottom_nav_height">62dp</dimen>
+    <dimen name="phone_boost_anim_size">306dp</dimen>
 </resources>

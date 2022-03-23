@@ -18,5 +18,8 @@
     <string name="ad_mob_interstitial_test_ad_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
     <string name="ad_mob_interstitial_ad_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
     <string name="phone_booster">PHONE BOOSTER</string>
+    <string name="ram_usage">Ram Usage</string>
+    <string name="usage">USAGE</string>
+    <string name="ram">RAM</string>
 
 </resources>

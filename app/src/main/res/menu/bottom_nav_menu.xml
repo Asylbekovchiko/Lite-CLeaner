@@ -2,21 +2,21 @@
     <item
         android:id="@+id/boostFragment"
         android:title="Boost"
-        android:icon="@drawable/ic_boost_2" />
+        android:icon="@drawable/boost_drawable" />
     <item
         android:id="@+id/optimizeFragment"
         android:title="Optimize"
-        android:icon="@drawable/ic_optimize_2__3_" />
+        android:icon="@drawable/cpu_drawable" />
     <item
         android:id="@+id/coolerFragment"
         android:title="Cool"
-        android:icon="@drawable/ic_cool" />
+        android:icon="@drawable/cooler_drawable" />
     <item
-        android:id="@+id/cleanFragment"
+        android:id="@+id/cleanerFragment"
         android:title="Clean"
-        android:icon="@drawable/ic_clean" />
+        android:icon="@drawable/clean_drawable" />
     <item
-        android:id="@+id/notificationsFragment"
+        android:id="@+id/spamRemovalFragment"
         android:title="Notification"
-        android:icon="@drawable/ic_spamremoval" />
+        android:icon="@drawable/spamremoval_drawable" />
 </menu>

@@ -26,5 +26,23 @@
         android:id="@+id/coolerFragment"
         android:name="kg.asylbekov.litecleaner.ui.cooler.CoolerFragment"
         android:label="fragment_cooler"
-        tools:layout="@layout/fragment_cooler" />
+        tools:layout="@layout/fragment_cooler" >
+        <action
+            android:id="@+id/action_coolerFragment_to_cleanerFragment"
+            app:destination="@id/cleanerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cleanerFragment"
+        android:name="kg.asylbekov.litecleaner.ui.cleaner.CleanerFragment"
+        android:label="fragment_cleaner"
+        tools:layout="@layout/fragment_cleaner" >
+        <action
+            android:id="@+id/action_cleanerFragment_to_spamRemovalFragment"
+            app:destination="@id/spamRemovalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/spamRemovalFragment"
+        android:name="kg.asylbekov.litecleaner.ui.spamremoval.SpamRemovalFragment"
+        android:label="fragment_spam_removal"
+        tools:layout="@layout/fragment_spam_removal" />
 </navigation>
