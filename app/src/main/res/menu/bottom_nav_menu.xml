@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/boostFragment"
+        android:title="Boost"
+        android:icon="@drawable/ic_boost_2" />
+    <item
+        android:id="@+id/optimizeFragment"
+        android:title="Optimize"
+        android:icon="@drawable/ic_optimize_2__3_" />
+    <item
+        android:id="@+id/coolerFragment"
+        android:title="Cool"
+        android:icon="@drawable/ic_cool" />
+    <item
+        android:id="@+id/cleanFragment"
+        android:title="Clean"
+        android:icon="@drawable/ic_clean" />
+    <item
+        android:id="@+id/notificationsFragment"
+        android:title="Notification"
+        android:icon="@drawable/ic_spamremoval" />
+</menu>

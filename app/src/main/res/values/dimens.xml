@@ -1,0 +1,32 @@
+<resources>
+    <!-- dp -->
+    <dimen name="dp_0.25x">2dp</dimen>
+    <dimen name="dp_0.5x">4dp</dimen>
+    <dimen name="dp_1x">8dp</dimen>
+    <dimen name="dp_1.25x">10dp</dimen>
+    <dimen name="dp_1.5x">12dp</dimen>
+    <dimen name="dp_1.75x">14dp</dimen>
+    <dimen name="dp_2x">16dp</dimen>
+    <dimen name="dp_2.25x">18dp</dimen>
+    <dimen name="dp_2.5x">20dp</dimen>
+    <dimen name="dp_2.75x">22dp</dimen>
+    <dimen name="dp_2.875x">23dp</dimen>
+    <dimen name="dp_3x">24dp</dimen>
+    <dimen name="dp_3.75x">30dp</dimen>
+
+    <!-- sp -->
+    <dimen name="scale">8sp</dimen>
+    <dimen name="scale_1.80x">11sp</dimen>
+    <dimen name="scale_1.5x">12sp</dimen>
+    <dimen name="scale_1.625x">13sp</dimen>
+    <dimen name="scale_1.75x">14sp</dimen>
+    <dimen name="scale_1.875x">15sp</dimen>
+    <dimen name="scale_2x">16sp</dimen>
+    <dimen name="scale_2.25x">18sp</dimen>
+
+
+    <!-- icon -->
+    <dimen name="margin_top_182dp">182dp</dimen>
+    <dimen name="btn_width">232dp</dimen>
+    <dimen name="bottom_nav_height">62dp</dimen>
+</resources>

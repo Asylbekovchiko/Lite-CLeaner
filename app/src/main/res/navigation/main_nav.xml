@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/boostFragment">
+    <fragment
+        android:id="@+id/boostFragment"
+        android:name="kg.asylbekov.litecleaner.ui.phoneboost.PhoneBoostFragment"
+        android:label="fragment_phone_boost"
+        tools:layout="@layout/fragment_phone_boost" >
+        <action
+            android:id="@+id/action_phoneBoostFragment2_to_optimizeFragment2"
+            app:destination="@id/optimizeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/optimizeFragment"
+        android:name="kg.asylbekov.litecleaner.ui.optimize.OptimizeFragment"
+        android:label="fragment_optimize"
+        tools:layout="@layout/fragment_optimize" >
+        <action
+            android:id="@+id/action_optimizeFragment2_to_coolerFragment2"
+            app:destination="@id/coolerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coolerFragment"
+        android:name="kg.asylbekov.litecleaner.ui.cooler.CoolerFragment"
+        android:label="fragment_cooler"
+        tools:layout="@layout/fragment_cooler" />
+</navigation>

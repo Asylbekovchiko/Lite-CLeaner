@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:letterSpacing">0</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:layout_width">@dimen/btn_width</item>
+        <item name="textAllCaps">false</item>
+        <item name="cornerRadius">@dimen/dp_3.75x</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="ButtonStyle.Blue" parent="ButtonStyle">
+        <item name="backgroundTint">@color/blue</item>
+        <item name="android:textSize">@dimen/dp_2.25x</item>
+    </style>
+
+    <dimen name="btn_height">40dp</dimen>
+</resources>

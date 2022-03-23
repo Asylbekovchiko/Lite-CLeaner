@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LiteCleaner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lite_cleaner_2_0">Lite Cleaner 2.0</string>
+    <string name="lite">Lite</string>
+    <string name="cleaner_2_0">Cleaner 2.0</string>
+    <string name="by_clicking_continue_i_give_my_consent_to">By clicking Continue I give my consent to</string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="and">and</string>
+    <string name="terms_and_conditions"><u>Terms and Conditions</u></string>
+    <string name="continue_string">Continue</string>
+    <string name="application_initialization_in_progress">Application initialization in progress</string>
+    <string name="loading_database">Loading the database</string>
+    <string name="initializing_processes">Initializing processes</string>
+
+    <string name="ad_mob_app_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="ad_mob_interstitial_test_ad_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="ad_mob_interstitial_ad_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="phone_booster">PHONE BOOSTER</string>
+
+</resources>

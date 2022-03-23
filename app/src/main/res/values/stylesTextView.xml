@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextStyle.Title.SecondPart" parent="Theme.AppCompat">
+        <item name="android:textSize">@dimen/scale_2.25x</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="TextStyle.Title.FirstPart" parent="Theme.AppCompat">
+        <item name="android:textSize">@dimen/scale_2.25x</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+
+    <style name="TextStyle.Content.FirstPart" parent="Theme.AppCompat">
+        <item name="android:textSize">@dimen/scale_2x</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="TextStyle.Title.Toolbar" parent="Theme.AppCompat">
+        <item name="android:textSize">@dimen/scale_2x</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="TextStyle.Content.Loading" parent="Theme.AppCompat">
+        <item name="android:textSize">@dimen/scale_1.75x</item>
+        <item name="android:textColor">@color/grey2</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="TextStyle.Content.SecondPart" parent="Theme.AppCompat">
+        <item name="android:textSize">@dimen/scale_2x</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+
+</resources>
