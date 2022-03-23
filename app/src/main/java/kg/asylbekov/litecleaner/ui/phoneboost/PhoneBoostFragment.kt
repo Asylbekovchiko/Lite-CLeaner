@@ -3,7 +3,9 @@ package kg.asylbekov.litecleaner.ui.phoneboost
 import android.annotation.SuppressLint
 import android.app.ActivityManager
 import android.content.Context.ACTIVITY_SERVICE
+import android.net.Uri
 import android.widget.Toast
+import androidx.browser.customtabs.CustomTabsIntent
 import kg.asylbekov.litecleaner.R
 import kg.asylbekov.litecleaner.base.BaseFragment
 import kg.asylbekov.litecleaner.databinding.FragmentPhoneBoostBinding
@@ -15,33 +17,43 @@ class PhoneBoostFragment :
 
     override fun init() {
         super.init()
-        initUI()
+        initListeners()
         initRam()
         initAnim()
     }
 
-    private fun initUI() {
+    private fun initListeners() {
         binding.apply {
             ivPremium.setOnClickListener {
-                Toast.makeText(context, "Functionality is in development ", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Functionality is in development ", Toast.LENGTH_SHORT)
+                    .show()
+            }
+            ivGame.setOnClickListener {
+                val url = "https://www.gamezop.com/?id=3178"
+                val customTabsIntent: CustomTabsIntent = CustomTabsIntent.Builder().build();
+                customTabsIntent.launchUrl(requireContext(), Uri.parse(url));
+            }
+            btnOptimize.setOnClickListener {
+                Toast.makeText(context, "Functionality is in development ", Toast.LENGTH_SHORT)
+                    .show()
             }
         }
-
-
     }
 
     private fun initAnim() {
 
-        if (finalPercentage >= 60) {
-            binding.lottieAnim.playAnimation()
-            binding.lottieAnim.loop(false)
-        } else {
-            binding.btnOptimize.setBackgroundResource(R.drawable.button_blue)
-            binding.lottieAnim.playAnimation()
-            binding.lottieAnim.loop(true)
-            binding.lottieAnim.cancelAnimation()
-
-        }
+        binding.lottieAnim.playAnimation()
+        binding.lottieAnim.loop(false)
+//        if (finalPercentage >= 60) {
+//            binding.lottieAnim.playAnimation()
+//            binding.lottieAnim.loop(false)
+//        } else {
+//            binding.btnOptimize.setBackgroundResource(R.drawable.button_blue)
+//            binding.lottieAnim.playAnimation()
+//            binding.lottieAnim.loop(true)
+//            binding.lottieAnim.cancelAnimation()
+//
+//        }
     }
 
     @SuppressLint("SetTextI18n")

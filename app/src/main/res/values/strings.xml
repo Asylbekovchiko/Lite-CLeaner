@@ -21,5 +21,7 @@
     <string name="ram_usage">Ram Usage</string>
     <string name="usage">USAGE</string>
     <string name="ram">RAM</string>
+    <string name="spam_removal">Spam Removal</string>
+    <string name="lite_cleaner">Lite Cleaner</string>
 
 </resources>
